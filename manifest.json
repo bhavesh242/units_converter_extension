@@ -1,0 +1,39 @@
+{
+  "name": "Unit Convert Selection",
+  "short_name": "unitconv_sel",
+  "version": "1.0.3",
+  "description": "Do unit conversion conveniently at the current selected text",
+  "permissions": [
+    "<all_urls>"
+  ],
+
+  "browser_action": {
+    "default_icon": "units_logo32.png",
+    "default_title": "Unit Convert Selection"
+  },
+
+  "minimum_chrome_version": "14",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "all_frames": true,
+      "run_at": "document_end",
+      "css": [ "content_script.css" ],
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ],
+
+  "icons": {
+    "16": "units_logo16.png",
+    "48": "units_logo48.png",
+    "128": "units_logo128.png",
+    "256": "units_logo256.png"
+  },
+
+  "manifest_version": 2
+}

@@ -1,0 +1,45 @@
+.unit_conversion_bubble {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: solid 1px;
+  border-radius: 4px;
+  box-shadow: 0 0 20px;
+  padding: 9px;
+  display: block;
+  background:-webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e6e6e6));
+  z-index: 1000;
+}
+
+.bubble_ext_name {
+  color: #666666;
+  margin: 0px;
+  font-size: 60%;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.bubble_title {
+  font-weight: bold;
+  font: arial, sans-serif;
+  color: #000066;
+  margin: 1px;
+  font-size: 100%;
+  padding: 2px;
+}
+
+.bubble_content {
+  font: arial, sans-serif;
+  padding: 0px;
+  font-size: 100%;
+  margin: 0px;
+}
+
+.bubble_hr {
+  height: 1px;
+  background-color: #aaa;
+  border-top: 1px solid #e4e4e4;
+  margin: 1px;
+  display: block;
+}
