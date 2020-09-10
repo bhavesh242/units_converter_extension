@@ -1,4 +1,4 @@
-.unit_conversion_bubble {
+.modal {
   visibility: hidden;
   position: absolute;
   top: 0;
@@ -12,15 +12,7 @@
   z-index: 1000;
 }
 
-.bubble_ext_name {
-  color: #666666;
-  margin: 0px;
-  font-size: 60%;
-  text-align: right;
-  margin-top: 5px;
-}
-
-.bubble_title {
+.modal_heading {
   font-weight: bold;
   font: arial, sans-serif;
   color: #000066;
@@ -29,17 +21,27 @@
   padding: 2px;
 }
 
-.bubble_content {
-  font: arial, sans-serif;
-  padding: 0px;
-  font-size: 100%;
+.modal_name {
+  color: #666666;
   margin: 0px;
+  font-size: 60%;
+  text-align: right;
+  margin-top: 5px;
 }
 
-.bubble_hr {
+
+.modal_newline {
   height: 1px;
   background-color: #aaa;
   border-top: 1px solid #e4e4e4;
   margin: 1px;
   display: block;
 }
+
+.modal_content {
+  font: arial, sans-serif;
+  padding: 0px;
+  font-size: 100%;
+  margin: 0px;
+}
+

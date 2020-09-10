@@ -1,7 +1,7 @@
 {
   "name": "Unit Convert Selection",
   "short_name": "unitconv_sel",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "Do unit conversion conveniently at the current selected text",
   "permissions": [
     "<all_urls>"
