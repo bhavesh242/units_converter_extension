@@ -8,7 +8,7 @@
   ],
 
   "browser_action": {
-    "default_icon": "units_logo32.png",
+    "default_icon": "logos/units_logo32.png",
     "default_title": "Unit Convert Selection"
   },
 
@@ -21,20 +21,21 @@
       ],
       "all_frames": true,
       "run_at": "document_end",
-      "css": [ "content_script.css" ],
+      "css": [ "styling/content_script.css" ],
       "js": [
-        "content_script.js",
-        "conversion_scripts.js",
-        "units_objects.js"
+        "main_scripts/content_script.js",
+        "main_scripts/parser_script.js",
+        "main_scripts/units_objects.js",
+        "main_scripts/utility.js"
       ]
     }
   ],
 
   "icons": {
-    "16": "units_logo16.png",
-    "48": "units_logo48.png",
-    "128": "units_logo128.png",
-    "256": "units_logo256.png"
+    "16": "logos/units_logo16.png",
+    "48": "logos/units_logo48.png",
+    "128": "logos/units_logo128.png",
+    "256": "logos/units_logo256.png"
   },
 
   "manifest_version": 2
