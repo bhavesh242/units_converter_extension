@@ -8,11 +8,11 @@ document.body.appendChild(unitModal);
 document.addEventListener('mouseup', (e) => {
     let selection = window.getSelection().toString().trim();
     const MAX_LENGTH = 30;
-
+    
     // well, if selected text is too long, we simply ignore it
     if (selection.length > 0 && selection.length < MAX_LENGTH) {
         // perform the unit conversion on user selected text, if possible
-        //let result = unit_convert(selection);
+        let result = get_conversions(selection);
         /*if (result.length > 0) {
             // [original selected text], and then all compatible conversions,
             //  and then a footer line with this extension's name

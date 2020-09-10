@@ -23,7 +23,9 @@
       "run_at": "document_end",
       "css": [ "content_script.css" ],
       "js": [
-        "content_script.js"
+        "content_script.js",
+        "conversion_scripts.js",
+        "units_objects.js"
       ]
     }
   ],
