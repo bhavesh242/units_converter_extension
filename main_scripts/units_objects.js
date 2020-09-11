@@ -6,18 +6,23 @@
     2) type : what type of attribute the unit represents : LENGTH, TIME, CURRENCY etc.
     3) aliases : what other representations the unit has 
 */ 
+
 const UNITS = [
     {
         unit : "meters",
-        type : LENGTH,
+        type : "length",
         aliases:["meter", "meters"]
     },
     {
         unit : "kilograms",
-        type : MASS,
+        type : "mass",
         aliases:["kilograms", "kgs"]
+    },
+    {
+        units : "seconds",
+        type : "time",
+        aliases : ["seconds", "sec", "s"]
     }
 ]
-
 
 

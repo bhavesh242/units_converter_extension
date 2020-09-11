@@ -5,6 +5,6 @@
 */
 
 const POPULAR_UNITS = {
-    LENGTH : ["meters","kilometers", "miles"],
-    MASS : ["grams", "kilograms", "pounds"]
+    "length" : ["meters","kilometers", "miles"],
+    "mass" : ["grams", "kilograms", "pounds"],
 }
