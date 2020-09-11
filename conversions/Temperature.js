@@ -23,7 +23,7 @@ class Temperature {
         let res = "";
         this.arr.forEach((u) => {
             switch (u.toLowerCase()) {
-                case "celcius": res += "," +quantity + " °C"; break;
+                case "celcius": res += "," +getPreciseNumber(quantity,precision) + " °C"; break;
                 case "kelvin": {
                     let conv = quantity + 273.15;
                     res += "," + getPreciseNumber(conv, precision) + " °K";
