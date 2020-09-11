@@ -21,7 +21,7 @@ function get_possible_conversions_list(type, currentUnit) {
 }
 
 
-//Return appropriate conversion class from the conversion scripts
+//Return appropriate conversion class from the conversion scripts based on unit type
 function get_conversion_class(type, unit) {
     if (type == "temperature") {
         return new Temperature(unit, get_possible_conversions_list(type, unit));
