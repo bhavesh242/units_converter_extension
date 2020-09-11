@@ -13,17 +13,15 @@ document.addEventListener('mouseup', (e) => {
     if (selection.length > 0 && selection.length < MAX_LENGTH) {
         // perform the unit conversion on user selected text, if possible
         let result = get_conversions(selection);
-        /*if (result.length > 0) {
+        if (result.length > 0) {
             // [original selected text], and then all compatible conversions,
             //  and then a footer line with this extension's name
-            result =  "<p class=\"modal_heading\">[" + selection + "]</p>" +
+            result =  "<p class=\"modal_heading\">" + selection + "</p>" +
                 "<p class=\"modal_content\">" +
-                result.replace(/,/g, "<hr class=\"modal_newline\">") + "</p>" +
-                "<p class=\"modal_name\">Unit Convert Selected Text</p>";
+                result.replace(/,/g, "<hr class=\"modal_newline\">") + "</p>";
             // show the modal
             showModal(e.clientX, e.clientY, result);
-        }*/
-        showModal(e.clientX, e.clientY, selection);
+        }
     }
     
 }, false);

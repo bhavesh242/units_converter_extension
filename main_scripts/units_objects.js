@@ -5,24 +5,40 @@
     1) unit : this the name of the unit that we plan to recongnize
     2) type : what type of attribute the unit represents : LENGTH, TIME, CURRENCY etc.
     3) aliases : what other representations the unit has 
-*/ 
+*/
 
 const UNITS = [
     {
-        unit : "meters",
-        type : "length",
-        aliases:["meter", "meters"]
+        unit: "meters",
+        type: "length",
+        aliases: ["meter", "meters"]
     },
     {
-        unit : "kilograms",
-        type : "mass",
-        aliases:["kilograms", "kgs"]
+        unit: "kilograms",
+        type: "mass",
+        aliases: ["kilograms", "kgs"]
     },
     {
-        units : "seconds",
-        type : "time",
-        aliases : ["seconds", "sec", "s"]
-    }
+        units: "seconds",
+        type: "time",
+        aliases: ["seconds", "sec", "s"]
+    },
+    {
+        unit: "celcius",
+        type: "temperature",
+        aliases: ["celcius", "c", "°c"]
+    },
+    {
+        unit: "fahrenheit",
+        type: "temperature",
+        aliases: ["fahrenheit", "f", "°f"]
+    },
+    {
+        unit: "kelvin",
+        type: "temperature",
+        aliases: ["kelvin", "k", "°k"]
+    },
+
 ]
 
 
