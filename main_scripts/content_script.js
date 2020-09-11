@@ -1,40 +1,40 @@
-// add an invisible modal element to the top of the page using <div>
+// add an invisible modal element to the top of the page
 let unitModal = document.createElement('div');
 unitModal.setAttribute('class', 'modal');
 unitModal.style.visibility = 'hidden';
 document.body.appendChild(unitModal);
 
-// when mouseup, check selected text (if any) and see if we can convert it
+// This function checks selected text (if any) when the mouse button is released and checks if  we can convert it into units
 document.addEventListener('mouseup', (e) => {
     let selection = window.getSelection().toString().trim();
     const MAX_LENGTH = 30;
-    
-    // well, if selected text is too long, we simply ignore it
+
+    //selected text is should be between lengths 0 - max_length
     if (selection.length > 0 && selection.length < MAX_LENGTH) {
-        // perform the unit conversion on user selected text, if possible
+
+        // Get all possible unit conversions for given selections
         let result = get_conversions(selection);
         if (result.length > 0) {
-            // [original selected text], and then all compatible conversions,
-            //  and then a footer line with this extension's name
-            result =  "<p class=\"modal_heading\">" + selection + "</p>" +
+            // Once the result is obtained, give the modal a heading as the trimmed selection and add each comma seperated results to new line
+            result = "<p class=\"modal_heading\">" + selection + "</p>" +
                 "<p class=\"modal_content\">" +
                 result.replace(/,/g, "<hr class=\"modal_newline\">") + "</p>";
-            // show the modal
+            // Display  the modal
             showModal(e.clientX, e.clientY, result);
         }
     }
-    
+
 }, false);
 
-// hide the modal when clicking on the screen
+// This function hides the modal when the mouse button is pressed
 document.addEventListener('mousedown', (e) => {
     unitModal.style.visibility = 'hidden';
 }, false);
 
-// move the modal to cursor location and make it visible
+// Display the modal at the cursor location and make it visible
 function showModal(mouseX, mouseY, html) {
-  unitModal.innerHTML = html;
-  unitModal.style.top = document.documentElement.scrollTop + mouseY + 'px';
-  unitModal.style.left = mouseX + 'px';
-  unitModal.style.visibility = 'visible';
+    unitModal.innerHTML = html;
+    unitModal.style.top = document.documentElement.scrollTop + mouseY + 'px';
+    unitModal.style.left = mouseX + 'px';
+    unitModal.style.visibility = 'visible';
 }

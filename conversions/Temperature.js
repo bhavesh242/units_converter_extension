@@ -1,10 +1,13 @@
+//Our temperature class handles all temperature related conversions
 class Temperature {
     constructor(unit, arr) {
         this.unit = unit;
         this.arr = arr;
     }
 
+    //Our standard conversion is celcius, so we try to convert all selection to celcius
     getStandardConversion(quantity) {
+        //We use a switch case to make appropriate conversion
         switch (this.unit.toLowerCase()) {
             case "celcius": return quantity;
             case "kelvin": return quantity - 273.15;
@@ -13,6 +16,8 @@ class Temperature {
         }
     }
 
+    /*From our standard conversion we try to convert into all the other units specified in arr property of this class
+    with a precision no more than 10*/
     getAllConversions(quantity, precision) {
 
         let res = "";
