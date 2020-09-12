@@ -38,6 +38,26 @@ const UNITS = [
         type: "temperature",
         aliases: ["kelvin", "k", "°k"]
     },
+    {
+        unit: "dollar",
+        type: "currency",
+        aliases: ["dollars", "dollar", "USD", "$"]
+    },
+    {
+        unit: "euro",
+        type: "currency",
+        aliases: ["euros", "euro", "EUR", "€"]
+    },
+    {
+        unit: "pound",
+        type: "currency",
+        aliases: ["pounds", "pound", "GBP", "£"]
+    },
+    {
+        unit: "rupee",
+        type: "currency",
+        aliases: ["rupees", "rupee", "INR", "₹"]
+    }
 
 ]
 
