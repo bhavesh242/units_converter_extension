@@ -8,5 +8,5 @@ const POPULAR_UNITS = {
     "length": ["meters", "kilometers", "miles"],
     "mass": ["grams", "kilograms", "pounds"],
     "temperature": ["celcius", "fahrenheit", "kelvin"],
-    "currency": ["dollar","euro","pound","rupee"],
+    "currency": ["usd","eur","gbp","inr"],
 }
