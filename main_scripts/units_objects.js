@@ -39,22 +39,22 @@ const UNITS = [
         aliases: ["kelvin", "k", "°k"]
     },
     {
-        unit: "dollar",
+        unit: "USD",
         type: "currency",
         aliases: ["dollars", "dollar", "USD", "$"]
     },
     {
-        unit: "euro",
+        unit: "EUR",
         type: "currency",
         aliases: ["euros", "euro", "EUR", "€"]
     },
     {
-        unit: "pound",
+        unit: "GBP",
         type: "currency",
         aliases: ["pounds", "pound", "GBP", "£"]
     },
     {
-        unit: "rupee",
+        unit: "INR",
         type: "currency",
         aliases: ["rupees", "rupee", "INR", "₹"]
     }
