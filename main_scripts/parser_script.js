@@ -26,20 +26,17 @@ async function get_conversions(selection) {
                 let conversion_class = get_conversion_class(unitObject.type, unitObject.unit);
                 // console.log(conversion_class)
                 if (unitObject.type == "currency") {
-                (async () => {
+                result= (async () => {
                     let std_converison = await conversion_class.getStandardConversion(quantity, precision)
-                    console.log(std_converison)
-                    result += await conversion_class.getAllConversions(Number(std_converison), precision);
+                    return await conversion_class.getAllConversions(Number(std_converison), precision);
                 })();
                 }
                 else {
                     let std_converison = conversion_class.getStandardConversion(quantity, precision)
-                    console.log(std_converison)
-                    result += conversion_class.getAllConversions(Number(std_converison), precision);
+                    result = conversion_class.getAllConversions(Number(std_converison), precision);
                 }
             }
         }
     });
-    console.log(result)
     return result;
 }
