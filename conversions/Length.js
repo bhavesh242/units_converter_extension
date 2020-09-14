@@ -1,5 +1,5 @@
 /*Our Length class handles all length related conversions. Currently implemented conversions are 
-[meters, miles, kilometers, centimeters, millimeters, micrometer, yard, feet, inch, furlong, chain]*/
+[meters, miles, kilometers, centimeters, millimeters, yard, feet, inch, furlong, chain]*/
 class Length {
     constructor(unit, arr) {
         this.unit = unit;
