@@ -5,9 +5,9 @@ class Currency {
     }
 
     getData(q) {
-        return fetch('https://free.currconv.com/api/v7/convert?apiKey=dd3d6c25f66defad1e04&q=' + q)
+        return fetch('https://api.exchangeratesapi.io/latest?base=' + q)
             .then(response => response.json())
-            .then(data => data.results)
+            .then(data => data.rates)
     }
 
     async getStandardConversion(quantity) {
@@ -16,18 +16,18 @@ class Currency {
             case "usd":
                 return quantity;
             case "eur":
-                rate = await this.getData('EUR_USD').then(function (d) {
-                    return d['EUR_USD'].val
+                rate = await this.getData('EUR').then(function (d) {
+                    return d['USD']
                 })
                 return rate * quantity
             case "gbp":
-                rate = await this.getData('GBP_USD').then(function (d) {
-                    return d['GBP_USD'].val
+                rate = await this.getData('GBP').then(function (d) {
+                    return d['USD']
                 })
                 return rate * quantity
             case "inr":
-                rate = await this.getData('INR_USD').then(function (d) {
-                    return d['INR_USD'].val
+                rate = await this.getData('INR').then(function (d) {
+                    return d['USD']
                 })
                 return rate * quantity
             default:
@@ -46,25 +46,24 @@ class Currency {
                     res+=",$ "+getPreciseNumber(quantity, precision);
                     break
                 case "eur":
-                    factor = await this.getData('USD_EUR').then(function (d) {
-                        return d['USD_EUR'].val
+                    factor = await this.getData('USD').then(function (d) {
+                        return d['EUR']
                     })
                     res+=",€ "+getPreciseNumber(factor * quantity, precision)
                     break
                 case "gbp":
-                    factor = await this.getData('USD_GBP').then(function (d) {
-                        return d['USD_GBP'].val
+                    factor = await this.getData('USD').then(function (d) {
+                        return d['GBP']
                     })
                     res+=",£ "+getPreciseNumber(factor * quantity, precision)
                     break
                 case "inr":
-                    factor = await this.getData('USD_INR').then(function (d) {
-                        return d['USD_INR'].val
+                    factor = await this.getData('USD').then(function (d) {
+                        return d['INR']
                     })
                     res+=",₹ "+getPreciseNumber(factor * quantity, precision)
             }
         }
-        console.log(res)
         return res
     }
 
