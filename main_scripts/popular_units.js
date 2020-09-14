@@ -8,5 +8,7 @@ const POPULAR_UNITS = {
     "length": ["meters", "kilometers", "miles"],
     "mass": ["grams", "kilograms", "pounds"],
     "temperature": ["celcius", "fahrenheit", "kelvin"],
-    "currency": ["usd","eur","gbp","inr"],
+    "currency": ["usd", "eur", "gbp", "inr", "jpy", "cad","aud","chf"],
 }
+
+const PRE_SYMBOLS = new Set(["$", "₹", "€", "£", "¥", "Can$", "C$", "CA$", "A$", "AU$"])

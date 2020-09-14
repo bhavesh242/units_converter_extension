@@ -6,12 +6,13 @@ async function get_conversions(selection) {
         let aliases = unitObject.aliases.sort(descending_length);
         for (let i = 0; i < aliases.length; i++) {
             var measure_RE
-            if (aliases[i] == "$" || aliases[i] == "₹" || aliases[i] == "€" || aliases[i] == "£") {
+            // if (aliases[i] == "$" || aliases[i] == "₹" || aliases[i] == "€" || aliases[i] == "£" || aliases[i]=="¥")
+            if (PRE_SYMBOLS.has(aliases[i])) {
                 let s = '((^' + '\\' + aliases[i] + '\\s*[\\-−]?(?:\\d+|\\d{1,3}(?:,\\d{3})+)(?:(\\.|,)\\d+)?))\\s*'
                 measure_RE = RegExp(s, "i");
             }
             else {
-                measure_RE = RegExp(numSpace_RE.source + aliases[i], "i");
+                measure_RE = RegExp(numSpace_RE.source + aliases[i] +"$", "i");
             }
             // console.log(measure_RE)
             var matches = selection.match(measure_RE);
@@ -30,6 +31,7 @@ async function get_conversions(selection) {
                     let std_converison = await conversion_class.getStandardConversion(quantity, precision)
                     return await conversion_class.getAllConversions(Number(std_converison), precision);
                 })();
+                console.log(result)
                 }
                 else {
                     let std_converison = conversion_class.getStandardConversion(quantity, precision)
