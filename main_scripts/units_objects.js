@@ -127,6 +127,26 @@ const UNITS = [
         unit: "chain",
         type: "length",
         aliases: ["chain", "chains"]
+    },
+    {
+        unit: "seconds",
+        type: "time",
+        aliases: ["sec", "s", "secs", "second"]
+    },
+    {
+        unit: "minutes",
+        type: "time", 
+        aliases: ["mins", "min", "minute"]
+    },
+    {
+        unit: "hours",
+        type: "time",
+        aliases: ["hrs", "h", "hour"]
+    },
+    {
+        unit: "days",
+        type: "time",
+        aliases: ["day"]
     }
 ]
 
