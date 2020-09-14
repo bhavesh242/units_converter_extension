@@ -5,7 +5,7 @@
 */
 
 const POPULAR_UNITS = {
-    "length": ["meters", "kilometers", "miles"],
+    "length": ["meters", "miles", "kilometers", "centimeters", "millimeters", "yard", "feet", "inch", "furlong", "chain"],
     "mass": ["grams", "kilograms", "pounds"],
     "temperature": ["celcius", "fahrenheit", "kelvin"],
     "currency": ["usd", "eur", "gbp", "inr", "jpy", "cad","aud","chf"],
