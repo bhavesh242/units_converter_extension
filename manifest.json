@@ -29,7 +29,7 @@
         "main_scripts/popular_units.js",
         "conversions/Temperature.js",
         "conversions/Currency.js",
-        "conversions/Length.js
+        "conversions/Length.js"
       ]
     }
   ],
