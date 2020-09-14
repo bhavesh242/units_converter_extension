@@ -77,6 +77,56 @@ const UNITS = [
         unit: "CHF",
         type: "currency",
         aliases: ["franc","francs","CHF"]
+    },
+    {
+        unit: "meters",
+        type: "length",
+        aliases: ["meter", "meters", "m", "mts"]
+    },
+    {
+        unit: "kilometers",
+        type: "length",
+        aliases: ["kilometer", "kilometers", "km", "kms"]
+    },
+    {
+        unit: "miles",
+        type: "length",
+        aliases: ["miles", "mile", "mi"]
+    },
+    {
+        unit: "centimeters",
+        type: "length",
+        aliases: ["centimeter", "centimeters", "cm", "cms"]
+    },
+    {
+        unit: "millimeters",
+        type: "length",
+        aliases: ["millimeter", "millimeters", "mm", "mms"]
+    },
+    {
+        unit: "yard",
+        type: "length",
+        aliases: ["yard", "yards", "yd", "yds"]
+    },
+    {
+        unit: "feet",
+        type: "length",
+        aliases: ["foot", "feet", "ft", "fts"]
+    },
+    {
+        unit: "inch",
+        type: "length",
+        aliases: ["inches", "inch", "\""]
+    },
+    {
+        unit: "furlong",
+        type: "length",
+        aliases: ["furlong", "furlongs", "fur", "furss"]
+    },
+    {
+        unit: "chain",
+        type: "length",
+        aliases: ["chain", "chains"]
     }
 ]
 
