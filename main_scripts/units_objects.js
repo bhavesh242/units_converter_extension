@@ -133,16 +133,16 @@ const UNITS = [
         type: "time", 
         aliases: ["mins", "min", "minute", "minutes"]
     },
-    // {
-    //     unit: "hours",
-    //     type: "time",
-    //     aliases: ["hrs", "h", "hour"]
-    // },
-    // {
-    //     unit: "days",
-    //     type: "time",
-    //     aliases: ["day"]
-    // }
+    {
+        unit: "hours",
+        type: "time",
+        aliases: ["hrs", "h", "hour", "hours"]
+    },
+    {
+        unit: "days",
+        type: "time",
+        aliases: ["day", "days"]
+    }
 ]
 
 

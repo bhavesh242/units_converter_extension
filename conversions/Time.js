@@ -8,8 +8,8 @@ class Time {
 		switch(this.unit.toLowerCase()){
 			case "seconds": return quantity;
 			case "minutes": return quantity * 60;
-			// case "hours": return quantity * (60 * 60);
-			// case "days": return quantity * (24 * 60 * 60);
+			case "hours": return quantity * (60 * 60);
+			case "days": return quantity * (24 * 60 * 60);
 			default: return null;
 		}
 	}
@@ -25,8 +25,18 @@ class Time {
 				case "minutes": {
 					let conv = quantity / 60;
 					res += ',' + getPreciseNumber(conv, precision) + " mins";
+					break;
 				}
-
+				case "hours": {
+					let conv = quantity / (60 * 60);
+					res += ',' + getPreciseNumber(conv, precision) + " hours";
+					break;
+				}
+				case "days": {
+					let conv = quantity / (24 * 60 * 60);
+					res += ',' + getPreciseNumber(conv, precision) + " days";	
+					break;
+				}
 			}
 
 		});
