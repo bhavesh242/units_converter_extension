@@ -57,8 +57,27 @@ const UNITS = [
         unit: "INR",
         type: "currency",
         aliases: ["rupees", "rupee", "INR", "₹"]
+    },
+    {
+        unit: "CAD",
+        type: "currency",
+        aliases: ["Can$", "C$", "CA$","CAD"]
+    },
+    {
+        unit: "JPY",
+        type: "currency",
+        aliases: ["¥","yen","yuan"]
+    },
+    {
+        unit: "AUD",
+        type: "currency",
+        aliases: ["AU$","A$","AUD"]
+    },
+    {
+        unit: "CHF",
+        type: "currency",
+        aliases: ["franc","francs","CHF"]
     }
-
 ]
 
 
