@@ -7,9 +7,9 @@ class Time {
 	getStandardConversion(quantity) {
 		switch(this.unit.toLowerCase()){
 			case "seconds": return quantity;
-			case "minutues": return quantity / 60;
-			case "hours": return quantity / (60 * 60);
-			case "days": return quantity / (24 * 60 * 60);
+			case "minutes": return quantity * 60;
+			// case "hours": return quantity * (60 * 60);
+			// case "days": return quantity * (24 * 60 * 60);
 			default: return null;
 		}
 	}
@@ -18,9 +18,18 @@ class Time {
 		let res = "";
 		this.arr.forEach((u) => {
 			switch(u.toLowerCase()){
-				case "seconds": res += "," + getPreciseNumber(quantity, precision) + " sec";
-				break;
+				case "seconds": {
+					res += "," + getPreciseNumber(quantity, precision) + " sec";
+					break;
+				}
+				case "minutes": {
+					let conv = quantity / 60;
+					res += ',' + getPreciseNumber(conv, precision) + " mins";
+				}
+
 			}
+
 		});
+		return res;
 	}
 }
