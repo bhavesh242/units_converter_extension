@@ -14,4 +14,13 @@ class Time {
 		}
 	}
 
+	getAllConversions(quantity, precision){
+		let res = "";
+		this.arr.forEach((u) => {
+			switch(u.toLowerCase()){
+				case "seconds": res += "," + getPreciseNumber(quantity, precision) + " sec";
+				break;
+			}
+		});
+	}
 }

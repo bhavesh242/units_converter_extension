@@ -19,11 +19,6 @@ const UNITS = [
         aliases: ["kilograms", "kgs"]
     },
     {
-        units: "seconds",
-        type: "time",
-        aliases: ["seconds", "sec", "s"]
-    },
-    {
         unit: "celcius",
         type: "temperature",
         aliases: ["celcius", "c", "°c"]
