@@ -13,7 +13,8 @@ class Mass {
             case "grams": return quantity / 1000;
             case "pound": return quantity / 2.20462262;
 			case "tonne": return quantity * 1000;
-			case "slug": return quantity * 14.5939029;
+			case "milligrams": return quantity / 1000000;
+			case "micrograms": return quantity / 1000000000;
             default: return null;
         }
     }
@@ -41,9 +42,14 @@ class Mass {
                     res += "," + getPreciseNumber(conv, precision) + " tonnes";
                     break;
                 }
-				case "slug": {
-                    let conv = quantity / 14.5939029;
-                    res += "," + getPreciseNumber(conv, precision) + " slugs";
+				case "milligrams": {
+                    let conv = quantity * 1000000;
+                    res += "," + getPreciseNumber(conv, precision) + " milligrams";
+                    break;
+                }
+				case "micrograms": {
+                    let conv = quantity * 1000000000;
+                    res += "," + getPreciseNumber(conv, precision) + " micrograms";
                     break;
                 }
             }

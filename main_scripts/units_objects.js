@@ -51,13 +51,18 @@ const UNITS = [
 	{
         unit: "tonne",
         type: "mass",
-        aliases: ["tonnes", "metric ton"]
+        aliases: ["metric tons", "metric ton", "tonnes", "tonne"]
     },
 	{
-        unit: "slug",
+        unit: "milligrams",
         type: "mass",
-        aliases: ["slugs", "kgs"]
+        aliases: ["milligrams", "milligram", "mgs", "mg"]
     },
+	{
+        unit: "micrograms",
+        type: "mass",
+        aliases: ["micrograms", "microgram"]
+    }
 ]
 
 
