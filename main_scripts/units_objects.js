@@ -142,6 +142,11 @@ const UNITS = [
         unit: "days",
         type: "time",
         aliases: ["day", "days"]
+    },
+    {
+        unit: "weeks",
+        type: "time",
+        aliases: ["week", "wks", "weeks"]
     }
 ]
 

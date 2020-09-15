@@ -9,7 +9,7 @@ const POPULAR_UNITS = {
     "mass": ["grams", "kilograms", "pounds"],
     "temperature": ["celcius", "fahrenheit", "kelvin"],
     "currency": ["usd", "eur", "gbp", "inr", "jpy", "cad","aud","chf"],
-    "time": ["seconds", "minutes", "hours", "days"],
+    "time": ["seconds", "minutes", "hours", "days", "weeks"],
 }
 
 const PRE_SYMBOLS = new Set(["$", "₹", "€", "£", "¥", "Can$", "C$", "CA$", "A$", "AU$"])

@@ -21,9 +21,9 @@ async function get_conversions(selection) {
                 matches = matches[1].toLowerCase();
                 // let quantity=matches.replace(aliases[i],'')
                 let quantity = eval(matches.replace(aliases[i], '').replaceAll(",", "").replace("−", "-"));
-                console.log(quantity)
+                // console.log(quantity)
                 let precision = getPrecision(Number(quantity));
-                console.log(unitObject.type,unitObject.unit)
+                // console.log(unitObject.type,unitObject.unit)
                 let conversion_class = get_conversion_class(unitObject.type, unitObject.unit);
                 // console.log(conversion_class)
                 if (unitObject.type == "currency") {
@@ -36,7 +36,6 @@ async function get_conversions(selection) {
                 else {
                     let std_converison = conversion_class.getStandardConversion(quantity, precision)
                     result = conversion_class.getAllConversions(Number(std_converison), precision);
-                    console.log(result);
                 }
             }
         }
