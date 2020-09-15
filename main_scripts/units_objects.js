@@ -16,7 +16,7 @@ const UNITS = [
     {
         unit: "kilograms",
         type: "mass",
-        aliases: ["kilograms", "kgs"]
+        aliases: ["kilograms", "kilogram", "kgs", "kg"]
     },
     {
         units: "seconds",
@@ -38,7 +38,26 @@ const UNITS = [
         type: "temperature",
         aliases: ["kelvin", "k", "°k"]
     },
-
+	{
+        unit: "grams",
+        type: "mass",
+        aliases: ["grams", "gms"]
+    },
+	{
+        unit: "pounds",
+        type: "mass",
+        aliases: ["pounds", "lbs"]
+    },
+	{
+        unit: "tonne",
+        type: "mass",
+        aliases: ["tonnes", "metric ton"]
+    },
+	{
+        unit: "slug",
+        type: "mass",
+        aliases: ["slugs", "kgs"]
+    },
 ]
 
 

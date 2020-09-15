@@ -27,7 +27,8 @@
         "main_scripts/units_objects.js",
         "main_scripts/utility.js",
         "main_scripts/popular_units.js",
-        "conversions/Temperature.js"
+        "conversions/Temperature.js",
+        "conversions/Mass.js"
       ]
     }
   ],
