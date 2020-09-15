@@ -13,15 +13,17 @@ document.addEventListener('mouseup', (e) => {
     if (selection.length > 0 && selection.length < MAX_LENGTH) {
 
         // Get all possible unit conversions for given selections
-        let result = get_conversions(selection);
-        if (result.length > 0) {
-            // Once the result is obtained, give the modal a heading as the trimmed selection and add each comma seperated results to new line
-            result = "<p class=\"modal_heading\">" + selection + "</p>" +
-                "<p class=\"modal_content\">" +
-                result.replace(/,/g, "<hr class=\"modal_newline\">") + "</p>";
-            // Display  the modal
-            showModal(e.clientX, e.clientY, result);
-        }
+        (async () => {
+            let result = await get_conversions(selection);
+            if (result.length > 0) {
+                // Once the result is obtained, give the modal a heading as the trimmed selection and add each comma seperated results to new line
+                result = "<p class=\"modal_heading\">" + selection + "</p>" +
+                    "<p class=\"modal_content\">" +
+                    result.replace(/,/g, "<hr class=\"modal_newline\">") + "</p>";
+                // Display  the modal
+                showModal(e.clientX, e.clientY, result);
+            }
+        })();
     }
 
 }, false);

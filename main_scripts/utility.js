@@ -26,6 +26,13 @@ function get_conversion_class(type, unit) {
     if (type == "temperature") {
         return new Temperature(unit, get_possible_conversions_list(type, unit));
     }
+    else if (type=="currency"){
+        return new Currency(unit,get_possible_conversions_list(type,unit));
+    }
+    else if (type == "length"){
+        return new Length(unit, get_possible_conversions_list(type, unit));
+    }
+       
 }
 
 //Get a number's precision
