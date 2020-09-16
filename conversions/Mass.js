@@ -61,7 +61,7 @@ class Mass {
                 }
 				case "ounces": {
                     let conv = quantity / 907.18474;
-                    res += "," + getPreciseNumber(conv, precision) + " ton";
+                    res += "," + getPreciseNumber(conv, precision) + " tonss";
                     break;
                 }
             }
