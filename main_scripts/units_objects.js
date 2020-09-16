@@ -36,12 +36,12 @@ const UNITS = [
 	{
         unit: "grams",
         type: "mass",
-        aliases: ["grams", "gms"]
+        aliases: ["grams", "gram", "gms", "gm"]
     },
 	{
         unit: "pounds",
         type: "mass",
-        aliases: ["pounds", "lbs"]
+        aliases: ["pounds", "pound", "lbs", "lb"]
     },
 	{
         unit: "tonne",
