@@ -58,6 +58,16 @@ const UNITS = [
         type: "mass",
         aliases: ["micrograms", "microgram"]
     },
+	{
+        unit: "ounces",
+        type: "mass",
+        aliases: ["ounces", "ounce", "ozs", "oz"]
+    },
+	{
+        unit: "ton",
+        type: "mass",
+        aliases: ["tons", "ton"]
+    },
     {
         unit: "USD",
         type: "currency",
