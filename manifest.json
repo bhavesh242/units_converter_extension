@@ -30,7 +30,8 @@
         "conversions/Temperature.js",
         "conversions/Mass.js"
         "conversions/Currency.js",
-        "conversions/Length.js"
+        "conversions/Length.js",
+        "conversions/Time.js"
       ]
     }
   ],

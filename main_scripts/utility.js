@@ -32,6 +32,9 @@ function get_conversion_class(type, unit) {
     else if (type == "length"){
         return new Length(unit, get_possible_conversions_list(type, unit));
     }
+    else if (type == "time"){
+        return new Time(unit, get_possible_conversions_list(type, unit));
+    }
        
 }
 

@@ -19,11 +19,6 @@ const UNITS = [
         aliases: ["kilograms", "kilogram", "kgs", "kg"]
     },
     {
-        units: "seconds",
-        type: "time",
-        aliases: ["seconds", "sec", "s"]
-    },
-    {
         unit: "celcius",
         type: "temperature",
         aliases: ["celcius", "c", "°c"]
@@ -152,6 +147,31 @@ const UNITS = [
         unit: "chain",
         type: "length",
         aliases: ["chain", "chains"]
+    },
+    {
+        unit: "seconds",
+        type: "time",
+        aliases: ["sec", "s", "secs", "second", "seconds"]
+    },
+    {
+        unit: "minutes",
+        type: "time", 
+        aliases: ["mins", "min", "minute", "minutes"]
+    },
+    {
+        unit: "hours",
+        type: "time",
+        aliases: ["hrs", "h", "hour", "hours"]
+    },
+    {
+        unit: "days",
+        type: "time",
+        aliases: ["day", "days"]
+    },
+    {
+        unit: "weeks",
+        type: "time",
+        aliases: ["week", "wks", "weeks"]
     }
 ]
 
