@@ -62,7 +62,7 @@ const UNITS = [
         unit: "micrograms",
         type: "mass",
         aliases: ["micrograms", "microgram"]
-
+    },
     {
         unit: "USD",
         type: "currency",

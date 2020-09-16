@@ -1,15 +1,18 @@
+//Our currency class handles all currency related conversions
 class Currency {
     constructor(unit, arr) {
         this.unit = unit;
         this.arr = arr;
     }
 
+    //api call that fetches the conversion rate for a given query q, where q is the stock name. For eg: USD
     getData(q) {
         return fetch('https://api.exchangeratesapi.io/latest?base=' + q)
             .then(response => response.json())
             .then(data => data.rates)
     }
 
+    //Our standard conversion is USD, so we try to convert all selection to USD
     async getStandardConversion(quantity) {
         let rate;
         switch (this.unit.toLowerCase()) {
@@ -56,6 +59,8 @@ class Currency {
         }
     }
 
+    /*From our standard conversion we try to convert into all the other units specified in arr property of this class
+    with a precision no more than 10*/
     async getAllConversions(quantity, precision) {
         let res = ""
         let factor = 1
@@ -105,7 +110,7 @@ class Currency {
                         return d['CHF']
                     })
                     res += ",Fr " + getPreciseNumber(factor * quantity, precision)
-                    break   
+                    break
             }
         }
         return res
