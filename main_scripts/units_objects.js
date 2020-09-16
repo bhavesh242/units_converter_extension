@@ -16,7 +16,7 @@ const UNITS = [
     {
         unit: "kilograms",
         type: "mass",
-        aliases: ["kilograms", "kgs"]
+        aliases: ["kilograms", "kilogram", "kgs", "kg"]
     },
     {
         unit: "celcius",
@@ -32,6 +32,31 @@ const UNITS = [
         unit: "kelvin",
         type: "temperature",
         aliases: ["kelvin", "k", "°k"]
+    },
+	{
+        unit: "grams",
+        type: "mass",
+        aliases: ["grams", "gms"]
+    },
+	{
+        unit: "pounds",
+        type: "mass",
+        aliases: ["pounds", "lbs"]
+    },
+	{
+        unit: "tonne",
+        type: "mass",
+        aliases: ["metric tons", "metric ton", "tonnes", "tonne"]
+    },
+	{
+        unit: "milligrams",
+        type: "mass",
+        aliases: ["milligrams", "milligram", "mgs", "mg"]
+    },
+	{
+        unit: "micrograms",
+        type: "mass",
+        aliases: ["micrograms", "microgram"]
     },
     {
         unit: "USD",
