@@ -15,6 +15,8 @@ class Mass {
 			case "tonne": return quantity * 1000;
 			case "milligrams": return quantity / 1000000;
 			case "micrograms": return quantity / 1000000000;
+			case "ounces": return quantity / 35.273962;
+			case "ton": return quantity * 907.18474;
             default: return null;
         }
     }
@@ -50,6 +52,16 @@ class Mass {
 				case "micrograms": {
                     let conv = quantity * 1000000000;
                     res += "," + getPreciseNumber(conv, precision) + " micrograms";
+                    break;
+                }
+				case "ounces": {
+                    let conv = quantity * 35.273962;
+                    res += "," + getPreciseNumber(conv, precision) + " ounces";
+                    break;
+                }
+				case "ounces": {
+                    let conv = quantity / 907.18474;
+                    res += "," + getPreciseNumber(conv, precision) + " ton";
                     break;
                 }
             }
