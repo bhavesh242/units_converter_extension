@@ -36,12 +36,12 @@ const UNITS = [
 	{
         unit: "grams",
         type: "mass",
-        aliases: ["grams", "gms"]
+        aliases: ["grams", "gram", "gms", "gm"]
     },
 	{
         unit: "pounds",
         type: "mass",
-        aliases: ["pounds", "lbs"]
+        aliases: ["pounds", "pound", "lbs", "lb"]
     },
 	{
         unit: "tonne",
@@ -57,6 +57,16 @@ const UNITS = [
         unit: "micrograms",
         type: "mass",
         aliases: ["micrograms", "microgram"]
+    },
+	{
+        unit: "ounces",
+        type: "mass",
+        aliases: ["ounces", "ounce", "ozs", "oz"]
+    },
+	{
+        unit: "ton",
+        type: "mass",
+        aliases: ["tons", "ton"]
     },
     {
         unit: "USD",
