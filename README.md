@@ -1,4 +1,4 @@
-# Units Converter Extension
+# Smart Units Converter - Browser Extension
 
 An extension that converts your selected values into popular units. Saves time, Makes life easier:dancer:
 
