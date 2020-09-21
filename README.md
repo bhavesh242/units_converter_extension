@@ -7,8 +7,8 @@ An extension that converts your selected values into popular units. Saves time, 
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/bhavesh242/units_converter_extension)
 ![GitHub contributors](https://img.shields.io/github/contributors/bhavesh242/units_converter_extension)
 
-Click on the image below to preview the working of the extension
-![![Alt text](https://i.ytimg.com/vi/W4USPH2sBJw/hqdefault.jpg)](https://www.youtube.com/watch?v=W4USPH2sBJw&ab_channel=BhaveshAgrawal)
+Click on the image below to preview the working of the extension<br/>
+[![Alt text](https://i.ytimg.com/vi/W4USPH2sBJw/hqdefault.jpg)](https://www.youtube.com/watch?v=W4USPH2sBJw&ab_channel=BhaveshAgrawal)
 
 ## Installation 
 
