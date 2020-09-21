@@ -16,9 +16,13 @@ Video Link :
 - In the chrome browser open ```chrome://extensions/```
 - Enable developer settings if they haven't been enabled
 - Choose Load Unpacked
+![image](https://github.com/bhavesh242/units_converter_extension/blob/master/Images/Uploaded.PNG)
 - Select the repository folder that was cloned in the first step
 - The extension will now be added to Chrome
+![image](https://github.com/bhavesh242/units_converter_extension/blob/master/Images/load%20unpacked.PNG)
+
 
 # Requirements
 - JavaScript
 - HTML 
+- CSS
