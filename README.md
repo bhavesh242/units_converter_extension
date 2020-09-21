@@ -1,4 +1,4 @@
-# Units Converter Extenison
+# Units Converter Extension
 
 An extension that converts your selected values into popular units. Saves time, Makes life easier:dancer:
 
@@ -16,8 +16,8 @@ Click on the image below to preview the working of the extension,
 - In the chrome browser open ```chrome://extensions/```
 - Enable developer settings if it is not enabled
 - Choose Load Unpacked
-![image](https://github.com/bhavesh242/units_converter_extension/blob/master/Images/load%20unpacked.PNG)
 - Select the repository folder that was cloned in the first step
+![image](https://github.com/bhavesh242/units_converter_extension/blob/master/Images/load%20unpacked.PNG)
 - The extension will now be added to the Chrome
 ![image](https://github.com/bhavesh242/units_converter_extension/blob/master/Images/Uploaded.PNG)
 
