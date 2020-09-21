@@ -55,7 +55,7 @@ Include details about your configuration and environment:
 The process described here has several goals:
 
 - Maintain Smart Units Converter's quality
-- Fix problems that are important to users
+- Priritize issues that are important to users
 - Engage the community in working toward the best possible Smart Units Converter
 - Enable a sustainable system for Smart Units Converter's maintainers to review contributions
 
