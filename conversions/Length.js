@@ -15,7 +15,6 @@ class Length {
             case "kilometers": return quantity * 1000;
             case "centimeters": return quantity / 100;
             case "millimeter": return quantity / 1000;
-            case "micrometer": return quantity / 1000000;
             case "yard": return quantity / 1.094;
             case "feet": return quantity / 3.281;
             case "inch": return quantity / 39.3701;
@@ -57,12 +56,12 @@ class Length {
                     break;
                 }
                 case "yard": {
-                    let conv = quantity / 1.09361;
+                    let conv = quantity * 1.09361;
                     res += ","+ getPreciseNumber(conv, precision) + " yd";
                     break;
                 }
                 case "feet": {
-                    let conv = quantity / 3.28084;
+                    let conv = quantity * 3.28084;
                     res += ","+ getPreciseNumber(conv, precision) + " ft";
                     break;
                 }
