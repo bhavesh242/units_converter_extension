@@ -6,6 +6,7 @@ An extension that converts your selected values into popular units. Saves time, 
 [![GitHub issues](https://img.shields.io/github/issues/bhavesh242/units_converter_extension)](https://github.com/bhavesh242/units_converter_extension)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/bhavesh242/units_converter_extension)
 ![GitHub contributors](https://img.shields.io/github/contributors/bhavesh242/units_converter_extension)
+[![DOI](https://zenodo.org/badge/294249129.svg)](https://zenodo.org/badge/latestdoi/294249129)
 
 Click on the image below to preview the working of the extension<br/>
 [![Alt text](https://i.ytimg.com/vi/W4USPH2sBJw/hqdefault.jpg)](https://www.youtube.com/watch?v=W4USPH2sBJw&ab_channel=BhaveshAgrawal)
