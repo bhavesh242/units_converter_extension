@@ -18,11 +18,11 @@ Click on the image below to preview the working of the extension<br/>
 - Enable developer settings if it is not enabled
 - Choose Load Unpacked
 - Select the repository folder that was cloned in the first step
-![image](https://github.com/bhavesh242/units_converter_extension/blob/master/Images/load%20unpacked.PNG)
+![image](https://github.com/bhavesh242/units_converter_extension/blob/master/assets/Images/load%20unpacked.PNG)
 - The extension will now be added to the Chrome
-![image](https://github.com/bhavesh242/units_converter_extension/blob/master/Images/Uploaded.PNG)
+![image](https://github.com/bhavesh242/units_converter_extension/blob/master/assets/Images/Uploaded.PNG)
 - Screenshot of working of the extension
-![image](https://github.com/bhavesh242/units_converter_extension/blob/master/Images/Example.PNG)
+![image](https://github.com/bhavesh242/units_converter_extension/blob/master/assets/Images/Example.PNG)
 
 ## Languages
 - JavaScript
