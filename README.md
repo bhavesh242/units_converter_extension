@@ -29,7 +29,8 @@ Click on the image below to preview the working of the extension<br/>
 - HTML 
 - CSS
 ## Software Requirements
-<b>Node.js & npm</b>
+- Node.js 
+- NPM
 ## Style Checker and Analyzer
 ### Standard Js 
 <b>Installation</b>
