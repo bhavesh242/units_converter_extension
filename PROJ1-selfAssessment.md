@@ -14,20 +14,20 @@
 || Number of commits: by different people|4|
 || Issues reports: there are many|4|
 ||  issues are being  closed|4|
-|| License: exists||
-|| DOI badge: exists ||
-||Docs: doco generated , format not ugly ||
-||Docs: what: point descriptions of each class/function (in isolation) ||
-||Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z||
-||Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing||
+|| License: exists|4|
+|| DOI badge: exists |4|
+||Docs: doco generated , format not ugly |4|
+||Docs: what: point descriptions of each class/function (in isolation) |4|
+||Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|4|
+||Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|4|
 ||Docs: 3 minute video, posted to YouTube. That convinces people why they want to work on your code.|4|
 || (hard) code conforms to some known patterns |4|
 |Tools Matter| Use of version control tools|4|
 || Extensive use of version control tools |4|
 || Repo has an up-to-date requirements.txt file|4|
 || Repo does not have "ignore" files.|4|
-||Use of  style checkers |0|
-||Extensive Use of  style checkers |0|
+||Use of  style checkers |4|
+||Extensive Use of  style checkers |4|
 || Use of code  formatters. |4|
 || Extensive Use of code  formatters. |4|
 || Use of syntax checkers. |4|
