@@ -24,9 +24,19 @@ Click on the image below to preview the working of the extension<br/>
 - Screenshot of working of the extension
 ![image](https://github.com/bhavesh242/units_converter_extension/blob/master/Images/Example.PNG)
 
-
-
-# Requirements
+## Languages
 - JavaScript
 - HTML 
 - CSS
+## Software Requirements
+<b>Node.js & npm</b>
+## Style Checker and Analyzer
+### Standard Js 
+<b>Installation</b>
+- `npm install standard --global` in comand line interface to install globally
+- `npm install standard --save-dev` in command line interface to install locally 
+
+ <b>Running Standard Js</b> 
+ - go to root of project and type `standard` if StandardJs is installed globally
+ - go to root of project and type `npx standard` if StandardJs is installed locally 
+ - Instead of installing it using npm, you can also use the extension available on VS Code
