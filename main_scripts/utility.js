@@ -1,5 +1,5 @@
 /*
-    The following file has all the utility funcitons that perform trivial yet important tasks
+    The following file has all the utility functions that perform trivial yet important tasks
 */
 
 //This is a sort function used to sort an array of string in descending order of string lengths
