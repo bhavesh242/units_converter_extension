@@ -1,0 +1,5 @@
+addons:
+  chrome: stable
+
+script:
+  - echo "Add script to pack chrome extension"
