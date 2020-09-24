@@ -78,3 +78,15 @@ While the prerequisites above must be satisfied prior to having your pull reques
    
  ## Attribution
  * This Contribution instructions were adapted from [Atom's Contributing.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
+
+
+## Code Style Checker and Analyzer
+### Standard Js 
+<b>Installation</b>
+- `npm install standard --global` in comand line interface to install globally
+- `npm install standard --save-dev` in command line interface to install locally 
+
+ <b>Running Standard Js</b> 
+ - go to root of project and type `standard` if StandardJs is installed globally
+ - go to root of project and type `npx standard` if StandardJs is installed locally 
+ - Instead of installing it using npm, you can also use the extension available on VS Code
